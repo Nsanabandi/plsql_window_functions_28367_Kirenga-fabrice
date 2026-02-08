@@ -1,0 +1,14 @@
+INSERT INTO kifa_customers VALUES (1, 'TechNova', 'East');
+INSERT INTO kifa_customers VALUES (2, 'CodeWorks', 'West');
+INSERT INTO kifa_customers VALUES (3, 'Appify', 'North');
+
+INSERT INTO kifa_products VALUES (1, 'Web App Development', 'Web');
+INSERT INTO kifa_products VALUES (2, 'Mobile App Development', 'Mobile');
+INSERT INTO kifa_products VALUES (3, 'E-Commerce Platform', 'Web');
+
+INSERT INTO kifa_transactions VALUES (101, 1, 1, 5000, DATE '2025-01-10');
+INSERT INTO kifa_transactions VALUES (102, 1, 2, 3000, DATE '2025-02-15');
+INSERT INTO kifa_transactions VALUES (103, 2, 3, 7000, DATE '2025-03-05');
+INSERT INTO kifa_transactions VALUES (104, 3, 1, 4000, DATE '2025-03-20');
+
+COMMIT;

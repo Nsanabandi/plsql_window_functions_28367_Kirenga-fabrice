@@ -1,0 +1,22 @@
+
+SELECT c.customer_name, p.product_name, t.amount
+FROM kifa_transactions t
+INNER JOIN kifa_customers c ON t.customer_id = c.customer_id
+INNER JOIN kifa_products p ON t.product_id = p.product_id;
+
+
+SELECT c.customer_name, t.transaction_id
+FROM kifa_customers c
+LEFT JOIN kifa_transactions t
+ON c.customer_id = t.customer_id;
+
+SELECT c.customer_name, p.product_name
+FROM kifa_customers c
+FULL OUTER JOIN kifa_products p
+ON c.customer_id = p.product_id;
+
+SELECT a.customer_name AS customer1, b.customer_name AS customer2, a.region
+FROM kifa_customers a
+JOIN kifa_customers b
+ON a.region = b.region
+AND a.customer_id <> b.customer_id;
